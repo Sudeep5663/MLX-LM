@@ -17,13 +17,13 @@ MLX-LM Fine-Tuning
     
 -- Fine-tune
     python -m mlx_lm.lora \
-  --train \
-  --model ./mlx_model \
-  --data ./data/ \ # A data of both training and validation set
-  --iters 1000 \
-  --batch-size 1 \
-  --save-every 100 \
-  --out ./fine_tuned_model
+    --train \
+    --model ./mlx_model \
+    --data ./data/ \ # A data of both training and validation set
+    --iters 1000 \
+    --batch-size 1 \
+    --save-every 100 \
+    --out ./fine_tuned_model
 
 -- Running the Fine-Tuned Model
     mlx_lm.chat --model ./fine_tuned_model
